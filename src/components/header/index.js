@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import { Nav } from './style';
 
 export default function Header() {
-  const botao = useSelector((state) => state.counter.value);
+  const botao = useSelector((state) => state.example.value);
 
   return (
     <Nav>

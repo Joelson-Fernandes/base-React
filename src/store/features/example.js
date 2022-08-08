@@ -1,18 +1,18 @@
 /* eslint-disable no-param-reassign */
 import { createSlice } from '@reduxjs/toolkit';
 
-export const botaoClicado = createSlice({
+export const exampleSlice = createSlice({
   name: 'botao',
   initialState: {
     value: false,
   },
   reducers: {
-    increment: (state) => {
+    botaoClicado: (state) => {
       state.value = !state.value;
     },
   },
 });
 
-export const { increment } = botaoClicado.actions;
+export const { botaoClicado } = exampleSlice.actions;
 
-export default botaoClicado.reducer;
+export default exampleSlice.reducer;
