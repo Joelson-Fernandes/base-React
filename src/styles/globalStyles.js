@@ -17,16 +17,16 @@ export default createGlobalStyle`
 
   html, body, #root {
     height: 100%;
+    width: 100%;
   }
 
-  body .Toastify .Toastify__toast-container .Toastify__toast--success {
-    background-color: ${colors.successColor};
-    color: #fff;
-  }
 `;
 
 export const Container = styled.section`
-  max-width: 500px;
-  background-color: ${colors.primaryColor};
-  margin: 20px auto;
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 `;

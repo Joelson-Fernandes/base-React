@@ -18,7 +18,7 @@ export default function Header() {
       <Link to="/123456/fdgfg">
         <FaSignInAlt size={24} />
       </Link>
-      {botao ? 'Clicado' : 'Não clicado'}
+      {botao ? 'Redux' : 'Redux modificado'}
     </Nav>
   );
 }

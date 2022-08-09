@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
 export const Title = styled.h1`
-  color: blue;
-  text-align: center;
+  color: #fff;
 `;
