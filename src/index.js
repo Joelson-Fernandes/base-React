@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import {
+  unstable_HistoryRouter as HistoryRouter,
+  Routes,
+  Route,
+} from 'react-router-dom';
 
 import history from './services/history';
 import App from './App';
@@ -13,7 +17,7 @@ import Login from './pages/login';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter history={history}>
+    <HistoryRouter history={history}>
       <Routes>
         <Route path="/" element={<App />}>
           <Route path="/" element={<Home />} />
@@ -21,6 +25,6 @@ root.render(
           <Route path="*" element={<Page404 />} />
         </Route>
       </Routes>
-    </BrowserRouter>
+    </HistoryRouter>
   </React.StrictMode>
 );
