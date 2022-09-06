@@ -2,8 +2,8 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { botaoClicado } from '../../store/features/example';
 
-import { Title, Botao } from './style';
 import { Container } from '../../styles/globalStyles';
+import { Title, Botao } from './style';
 
 export default function Login() {
   const dispatch = useDispatch();
